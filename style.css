@@ -1,0 +1,206 @@
+/*----------------------------------------------
+  Page SetUp
+  ----------------------------------------------*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: #555;
+  font-family: "Alegreya Sans", sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+}
+
+.row {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+.clearfix {
+  zoom: 1;
+}
+.clearfix:after {
+  content: ".";
+  clear: both;
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
+
+/*----------------------------------------------
+  Header
+  ----------------------------------------------*/
+header {
+  background-image: linear-gradient(
+      rgba(20, 20, 20, 0.5),
+      rgba(20, 20, 20, 0.5)
+    ),
+    url(assets/images/home.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  background-attachment: fixed;
+}
+
+h1 {
+  margin: 0;
+  color: #fff;
+  font-size: 400%;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  word-spacing: 4px;
+}
+h2 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  color: #fff;
+  font-size: 220%;
+  font-weight: 200;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  word-spacing: 4px;
+}
+.hero-text-box {
+  position: absolute;
+  width: 1140px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 30px;
+  font-weight: 300;
+  text-decoration: none;
+  border-radius: 200px;
+  transition: background-color 0.4s, color 0.4s;
+}
+.btn:hover,
+.btn:active {
+  background-color: #649e7e;
+  color: #fff;
+}
+
+.btn-full {
+  background-color: #90e3b6;
+  color: #fff;
+  margin-right: 15px;
+}
+
+.btn-ghost {
+  border: 1px solid #90e3b6;
+  color: #90e3b6;
+}
+
+.main-nav {
+  float: right;
+  list-style: none;
+  margin-top: 40px;
+}
+
+.main-nav li {
+  display: inline-block;
+  margin-left: 30px;
+}
+
+.main-nav li a {
+  color: #fff;
+  padding: 8px 0;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 90%;
+  border-bottom: 2px solid transparent;
+  transition: border-bottom 0.3s;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active {
+  border-bottom: 2px solid #f5aa2b;
+}
+
+/*----------------------------------------------
+  Header
+  ----------------------------------------------*/
+section {
+  padding: 80px 0 0 0;
+}
+h3 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 180%;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  word-spacing: 2px;
+}
+
+h3:after {
+  display: block;
+  height: 2px;
+  background-color: #f5aa2b;
+  content: "";
+  width: 100px;
+  margin: 30px auto;
+}
+h4 {
+  margin-bottom: 15px;
+}
+.tagline {
+  line-height: 145%;
+  width: 70%;
+  margin-left: 15%;
+}
+
+.box {
+  padding: 1%;
+}
+
+.product-showcase {
+  list-style: none;
+  width: 100%;
+}
+.product-showcase li {
+  display: block;
+  float: left;
+  margin: 5px;
+}
+
+.product-showcase li img {
+  transform: scale(1);
+  transition: transform 0.4s;
+}
+
+.product-showcase li img:hover {
+  transform: scale(1.06);
+}
+
+.section-about {
+  background-color: #f5f5f5;
+}
+
+.section-testimonial {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("assets/images/team.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center top;
+  color: white;
+}
+
+blockquote {
+  padding: 20px;
+  font-style: italic;
+  line-height: 145%;
+  display: block;
+}
+cite {
+  font-size: 90%;
+  margin-top: 35px;
+  margin-left: 20px;
+}
