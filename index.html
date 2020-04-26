@@ -3,9 +3,13 @@
 
 <head>
     <link rel="stylesheet" href="normalize.css" type="text/css">
+    <link rel="stylesheet" href="animate.css" type="text/css">
     <link rel="stylesheet" href="style.css" type="text/css">
     <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,100;0,300;0,400;1,300&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="icon" type="image/x-icon" href="assets/favicon.png">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Signifly</title>
@@ -17,10 +21,10 @@
             <div class="row">
                 <img src="assets/logo.svg" alt="signifly logo" height="100" width="100">
                 <ul class="main-nav">
-                    <li><a href="">Our Services</a></li>
-                    <li><a href="">Our Team</a></li>
-                    <li><a href="">About Us</a></li>
-                    <li><a href="">Our Work</a></li>
+                    <li><a href="#approach">Our Approach</a></li>
+                    <li><a href="#showcase">Product Showcase</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#values">Our Values</a></li>
 
                 </ul>
             </div>
@@ -30,11 +34,11 @@
                 <h2>Copenhagen - Oslo - Montréal </h2>
                 </Copenhagen>
             </h1>
-            <a class="btn btn-full" href="">Who we are</a>
-            <a class="btn btn-ghost" href="">Build your team</a>
+            <a class="btn btn-full js--scroll-to-aboutus" href="#">About Us</a>
+            <a class="btn btn-ghost" href="https://signiflyteambuilder.netlify.app/">Build your team</a>
         </div>
     </header>
-    <section class="section-features">
+    <section class="section-features" id="approach">
         <div class="row">
             <h3>
                 MAKE DIGITAL SOLUTIONS WORK
@@ -46,7 +50,7 @@
                 experimental approach and fast execution are a solid recipe for building an innovation culture and
                 making new digital offerings that let you keep your core business in focus. </p>
         </div>
-        <div class="row">
+        <div class="row js--wp-1">
 
             <div class="col span-1-of-4 box">
                 <img src="assets/icons/teamicon.svg" alt="signifly team">
@@ -83,18 +87,18 @@
         </div>
     </section>
 
-    <section class="section-products">
+    <section class="section-products" id="showcase">
         <h3>
             PRODUCT SHOWCASE
         </h3>
         <ul class="product-showcase clearfix">
-            <li>
+            <li class="js--wp-2">
                 <figure><img src="assets/images/product1.jpg" alt="product1"></figure>
             </li>
             <li>
                 <figure><img src="assets/images/product2.jpg" alt="product2"></figure>
             </li>
-            <li>
+            <li class="js--wp-2">
                 <figure><img src="assets/images/product4.jpg" alt="product4"></figure>
             </li>
             <li>
@@ -102,11 +106,11 @@
             </li>
         </ul>
     </section>
-    <section class="section-about">
+    <section class="section-about js--section-aboutus" id="about">
         <h3>
             ABOUT US
         </h3>
-        <div class="row">
+        <div class="row js--wp-3">
             <div class="col span-1-of-4 box">
                 <img src="assets/icons/W1.svg" alt="signifly W1">
                 <h4>What we do</h4>
@@ -133,6 +137,7 @@
             </div>
             <div class="row">
     </section>
+
     <section class="section-testimonial">
         <div class="row">
             <h3>
@@ -179,16 +184,136 @@
             </div>
         </div>
     </section>
-    <section>
+
+    <section id="values">
         <div class="row">
-            <p>
-                BotXO delivers a platform that empowers brands to have specialized chatbots providing instant
-                support and personalised shopping through conversational interfaces. We helped them with a visual
-                identity embracing their core business and designed a new website presenting Chatbot-technology to
-                the world.
-            </p>
+            <h3>
+                OUR VALUES
+            </h3>
+        </div>
+        <div class="row js--wp-4">
+            <div class="col span-1-of-3">
+                <img src="assets/icons/honest.svg" height="50%" width="50%" />
+                <h4>Honesty</h4>
+                <p> Second agendas kill creativity. So openness, fairness and respect are qualities of the people we
+                    like to work with. We do our best to be transparent and honest and expect people around us to hold
+                    the same standards.</p>
+            </div>
+
+
+            <div class="col span-1-of-3">
+                <img src="assets/icons/energy.svg" height="50%" width="50%" />
+                <h4>Energy</h4>
+                <p>A positive attitude fuels creative processes, and good vibes tend to multiply when everyone brings
+                    their A-game. No one is perfect, but we do our best to keep the energy high and the vibe positive
+                    for ourselves and the teams we work with.</p>
+            </div>
+
+
+            <div class="col span-1-of-3">
+                <img src="assets/icons/fun.svg" height="50%" width="50%" />
+                <h4>Fun</h4>
+                <p>We love what we do and believe we do our best work when we have fun doing it. It’s not that we need
+                    to crack jokes or horse around – we just have to structure our efforts so what we’re doing feels
+                    more like play than work.</p>
+            </div>
         </div>
     </section>
+    <section>
+        <div class="row">
+            <h3>
+                WE WOULD LOVE TO HEAR FROM YOU
+            </h3>
+        </div>
+        <div class="row">
+            <form method="post" action="#">
+                <div class="row">
+                    <div class="col span-1-of-3">
+                        <label for="name">Name</label>
+                    </div>
+                    <div class="col span-2-of-3">
+                        <input type="text" name="name" id="name" placeholder="Your name" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col span-1-of-3">
+                        <label for="email">Email</label>
+                    </div>
+                    <div class="col span-2-of-3">
+                        <input type="email" name="email" id="email" placeholder="Your email" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col span-1-of-3">
+                        <label>How did you find us?</label>
+                    </div>
+                    <div class="col span-2-of-3">
+                        <select name="find-us" id="find-us">
+                            <option value="friends" selected>Friends</option>
+                            <option value="search">Search engine</option>
+                            <option value="advertisement">Advertisement</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col span-1-of-3">
+                        <label for="news">Newsletter</label>
+                    </div>
+                    <div class="col span-2-of-3">
+                        <input type="checkbox" name="news" id="news" checked>Yes, please
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col span-1-of-3">
+                        <label for="message">Tell me all about it</label>
+                    </div>
+                    <div class="col span-2-of-3">
+                        <textarea name="message" id="message" placeholder="Write here"></textarea>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col span-1-of-3">
+                        <label>&nbsp;</label>
+                    </div>
+                    <div class="col span-2-of-3">
+                        <input type="submit" value="Hola !">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <div class="row">
+            <div class="col span-1-of-2">
+                <ul class="footer-nav">
+                    <li><a href="#approach">Our Approach</a></li>
+                    <li><a href="#showcase">Product Showcase</a></li>
+                    <li><a href="about">About Us</a></li>
+                    <li><a href="#values">Our Values</a></li>
+                </ul>
+            </div>
+            <div class="col span-1-of-2">
+                <ul class="social-links">
+                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fab fa-google-plus-square"></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <p>
+                Copyright &copy; 2020 by Signifly, developed by Samuel Idehen. All rights reserved.
+            </p>
+        </div>
+    </footer>
+    <script src="https://kit.fontawesome.com/3e3ab56bad.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-migrate-3.0.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.5/waypoints.min.js"></script>
+    <script src="js/script.js"></script>
+
 </body>
 
 </html>
