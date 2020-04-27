@@ -135,7 +135,29 @@ input[type="submit"] {
   box-shadow: 0 2px 2px #efefef;
   z-index: 9999; /* defines the stacking of elements in the z-axis; 9999 is the maximum value and the element with sticky class will be always on the top */
 }
+.logo-black {
+  display: none;
+}
+.sticky .main-nav {
+  margin-top: 38px;
+}
 
+.sticky .main-nav li a {
+  padding: 8px 0;
+  color: #555;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 90%;
+  border-bottom: 2px solid transparent;
+  transition: border-bottom 0.3s;
+}
+
+.sticky .logo {
+  display: none;
+}
+.sticky .logo-black {
+  display: inline-block;
+}
 /* ----- MOBILE NAVIGATION ----- */
 
 .mobile-nav-icon {

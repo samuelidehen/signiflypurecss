@@ -1,5 +1,20 @@
 $(document).ready(function() {
   // For the sticky navigation
+
+  $(".js--section-features").waypoint(
+    function(direction) {
+      if (direction == "down") {
+        $("nav").addClass("sticky");
+      } else {
+        $("nav").removeClass("sticky");
+      }
+    },
+    {
+      // will happen 60px before we hit the .js--section-features
+      offset: "60px"
+    }
+  );
+
   $(".js--scroll-to-aboutus").click(function() {
     $("html, body").animate(
       { scrollTop: $(".js--section-aboutus").offset().top },
